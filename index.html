@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>More Web Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <div class="container">
+      <header class="bg-gray-900 py-20 text-center rounded-xl my-4">
+        <h1 class="text-gray-50 text-6xl font-bold uppercase italic">
+          Here Be Dragons
+        </h1>
+      </header>
+      <main>
+        <blog-post-list id="blog-posts">
+          <h2
+            slot="heading"
+            class="text-gray-500 border-b-2 border-gray-100 mb-8 text-3xl"
+          >
+            Everything I've Written
+          </h2>
+        </blog-post-list>
+      </main>
+      <footer class="border-t-2 border-gray-200 my-8">
+        <div class="flex justify-between py-4">
+          <ul>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+          </ul>
+          <ul>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+          </ul>
+          <ul>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+          </ul>
+          <ul>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+            <li>Footer Links</li>
+          </ul>
+        </div>
+        <p class="flex justify-center text-gray-500 text-xs">
+          &copy; 2022 Horace Wilkinson
+        </p>
+      </footer>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
